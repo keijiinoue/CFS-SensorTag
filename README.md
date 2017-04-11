@@ -7,7 +7,7 @@ Connected Field Service デモ by TI SensorTag のセットアップ手順を説
     Use the Azure IoT Gateway SDK to send device-to-cloud messages with a physical device (Linux)  
     https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-gateway-sdk-physical-device  
   * この時点で、センサーデータは IoT Hub に届くが、まだ Azure Stream Analytics ジョブで扱うことができない。データが JSON 形式ではないため。  
-1. センサーデータを JSON 形式で Azure IoT Hub に出力する  
+2. センサーデータを JSON 形式で Azure IoT Hub に出力する  
   * 以下の Extension をダウンロードして、Raspberry Pi 3 上の SDK を上書き
     BLE Sample Extension of Azure IoT Gateway SDK  
     https://github.com/ms-iotkithol-jp/AzureIoTGatewaySDKExtention  
@@ -15,7 +15,7 @@ Connected Field Service デモ by TI SensorTag のセットアップ手順を説
     Raspberry Pi3(Raspbian) + TI Sensor Tag CC2650 Sample  
     https://github.com/ms-iotkithol-jp/AzureIoTGatewaySDKExtention/blob/master/samples/ble_json_gateway/src/readme.md  
   * この時点で、センサーデータは Azure Stream Analytics ジョブで扱うことができるが、まだクエリの修正が必要。  
-1. クエリの編集  
+3. クエリの編集  
   * 以下はクエリのサンプルです。
     * 「PowerBIkeijidemo01」という出力は、Power BI リアルタイム ストリームデータ 可視化のためのものです。必要ない場合には最後の SELECT 文全体が不要です。  
     * Photon による接続にも、CFS 標準のシミュレーターによる接続にも対応できるクエリになっています。SensorTag 専用のクエリにする場合にはもう少しシンプルになります。  

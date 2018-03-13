@@ -8,7 +8,7 @@ Connected Field Service デモ by TI SensorTag のセットアップ手順を説
     https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-gateway-sdk-physical-device  
   * この時点で、センサーデータは IoT Hub に届くが、まだ Azure Stream Analytics ジョブで扱うことができない。データが JSON 形式ではないため。  
 2. センサーデータを JSON 形式で Azure IoT Hub に出力する  
-  * 以下の Extension をダウンロードして、Raspberry Pi 3 上の SDK を上書き
+  * 以下の Extension をダウンロードして、Raspberry Pi 3 上の SDK を上書き  
     BLE Sample Extension of Azure IoT Gateway SDK  
     https://github.com/ms-iotkithol-jp/AzureIoTGatewaySDKExtention  
   * 以下に記載のサンプル ble_json_gateway を実行  
